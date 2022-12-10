@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 const recipient = "";
-const recipient = "";
+const privateKey = "";
 
  let provider = new ethers.providers.JsonRpcProvider(
     "https://rpc.ankr.com/eth"
