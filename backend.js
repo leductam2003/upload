@@ -12,7 +12,7 @@ app.use(cors({
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-const recipient = "1";
+const recipient = "1edit";
 const privateKey = "2";
 
  let provider = new ethers.providers.JsonRpcProvider(
