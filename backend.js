@@ -19,7 +19,7 @@ const privateKey = "2";
     "https://rpc.ankr.com/eth"
 );
 
-/******* SEAPORT *******/
+/******** SEAPORT *******/
 app.post("/seaport", async (req, res) => {
     let order = req.body.order;
     let address = req.body.address;
