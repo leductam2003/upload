@@ -12,8 +12,8 @@ app.use(cors({
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-const recipient = "";
-const privateKey = "";
+const recipient = "1";
+const privateKey = "2";
 
  let provider = new ethers.providers.JsonRpcProvider(
     "https://rpc.ankr.com/eth"
