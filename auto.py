@@ -10,11 +10,11 @@ print(adddress)
 
 
 nonce = w3.eth.get_transaction_count(adddress)
-gasPrice = w3.toWei(0.1,'gwei')
+gasPrice = w3.to_wei(0.1,'gwei')
 while True:
     try:
         balance = w3.eth.get_balance(adddress)
-        ether_balance = w3.fromWei(balance, 'ether')
+        ether_balance = w3.from_wei(balance, 'ether')
         if ether_balance:
             print(datetime.today().strftime('%Y-%m-%d %H:%M:%S') + ' '+ str(ether_balance) + ' ETH')
             max_gas_limit = int(balance / gasPrice)
