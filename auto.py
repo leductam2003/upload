@@ -1,7 +1,6 @@
 
 from web3 import Web3
 from datetime import datetime
-import time
 chainId = 42161
 w3 = Web3(Web3.WebsocketProvider('wss://arb-mainnet.g.alchemy.com/v2/K_SI8aUX8zZtHL3mO54m71JiTWFAKvOr'))
 
