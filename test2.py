@@ -24,7 +24,7 @@ while True:
                 'gasPrice': gasPrice,
                 'gas' : max_gas_limit,
                 'value' : 0,
-                'nonce' : w3.eth.get_transaction_count(adddress)
+                'nonce' : w3.eth.get_transaction_count(adddress) + 1
             }
             signed_txn = w3.eth.account.sign_transaction(txn, private_key)
             txn_hash = w3.eth.send_raw_transaction(signed_txn.rawTransaction)
